@@ -26,15 +26,17 @@ OUTPUT : The decomposition of the input CRN into independent subnetworks. A file
 
 rowspan_polynomials.jl:
 
-This function is adapted from (ref) 
+This function is adapted from two papers:
+
+Cappelletti, D., Gupta, A., and Khammash, M. (2020). A hidden integral structure endows absolute concentration robust systems with resilience to dynamical concentration disturbances. Journal of The Royal Society Interface, 17(171):20200437.
+
+Karp, R. L., P´erez Mill´an, M., Dasgupta, T., Dickenstein, A., and Gunawardena, J. (2012). Complex-linear invariants of biochemical networks. Journal of Theoretical Biology, 311:130–138.
 
 The function finds polynomials in the rowspan of a CRN with monomial terms corresponding to chosen complexes in the CRN
 
 INPUT : The name of a Catalyst-defined reaction network, a vector containing the indices of the chosen complexes
 
 OUTPUT : Vectors representing the linear combinations of rate equations required to reach the rowspan polynomial and the coefficients of each monomial in the rowspan polynomial. There should be zero's corresponding to the non-chosen complexes. 
-
-You can multiply these coefficients to get the polynomial
 
 
 get_Oscar_SteadyStatesystem.jl:
